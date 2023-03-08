@@ -1,8 +1,8 @@
-import React from 'react';
-import Project from '../Project';
+
+import Project from './Project'
 
 // this is the img area
-import landing from '../images/landing.PNG'
+import landing from '../images/landing.png'
 import fof from '../images/404.webp'
 // end
 
