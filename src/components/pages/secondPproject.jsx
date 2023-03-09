@@ -12,8 +12,9 @@ import fof from '../images/404.webp'
 const SecondPproject = () => {
     return (
         <div>
+            <h1 className='text-center font-thinPoppins mb-5'>2/3</h1>
              {/* second set */}
- <div id='second' className='grid grid-cols-2 gap-12'>
+                <div id='second' className='grid grid-cols-2 gap-12'>
 
                 <Project img={fof}
                 title='empty' 
