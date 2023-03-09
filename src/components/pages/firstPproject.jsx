@@ -1,5 +1,5 @@
-
-import Project from './Project'
+import React from 'react'
+import Project from '../Project'
 
 // this is the img area
 import landing from '../images/landing.png'
@@ -32,9 +32,7 @@ const FirstPproject = () => {
                 title='empty' 
                 language='none'
                 link='#'/>
-
-                
-        </div>
+             </div>
 
         </div>
     );

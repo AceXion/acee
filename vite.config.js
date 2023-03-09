@@ -1,9 +1,11 @@
-import { defineConfig } from "vite";    
-import htmlPurge from 'vite-plugin-purgecss';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-
+// https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [
-        htmlPurge([htmlPurge()]),
-    ],
-});
+  plugins: [react()],
+  server: {
+    host: true
+  },
+  base: '/acee/',
+})
