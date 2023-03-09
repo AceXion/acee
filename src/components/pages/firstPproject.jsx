@@ -2,7 +2,7 @@ import React from 'react';
 import Project from '../Project';
 
 // this is the img area
-import landing from '../images/landing.png'
+import landing from '../images/landing.PNG'
 import fof from '../images/404.webp'
 // end
 
