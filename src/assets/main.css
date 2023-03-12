@@ -3,7 +3,7 @@
     --second-clr: #2E4F4F;
     --Dark-clr: #2C3333;
     --Light-clr: #CBE4DE;
-    --R-clr: #00D8FF;
+    --R-clr: #00d9ff;
     --text-clr:#c7e2e6;
 }
 
@@ -166,3 +166,8 @@ backdrop-filter: blur(5.1px);
     --tw-scale-y: .9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
+
+
+
+/* bg area */

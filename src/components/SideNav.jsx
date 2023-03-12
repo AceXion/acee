@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/main.css'
-
+import { Link } from 'react-scroll'
 
 
 
@@ -25,30 +25,30 @@ const SideNav = () => {
                 nav ? (
                 
                     <div onClick={handleNav} className='md:hidden fixed w-full h-screen glass flex flex-col justify-center items-center z-20 '>
-                        <a onClick={handleNav} href="#home" className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
+                        <Link onClick={handleNav} to="home" smooth={true} offset={0} duration={500} className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
                             <i className="fa-solid fa-house"></i>
                             <span className="font-bold pl-5">HOME</span>
-                        </a>
-                        <a onClick={handleNav} href="#work" className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
+                        </Link>
+                        <Link onClick={handleNav} to="work" smooth={true} offset={0} duration={500} className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
                         <i className="fa fa-th-large" aria-hidden="true"></i>
                             <span className="font-bold pl-5">EXPERIENCE</span>
-                        </a>
-                        <a onClick={handleNav} href="#project" className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
+                        </Link>
+                        <Link onClick={handleNav} to="project" smooth={true} offset={0} duration={500} className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
                         <i className="fa-solid fa-bars-progress"></i>  
                             <span className="font-bold pl-5">PROJECT</span>
-                        </a>
-                        <a onClick={handleNav} href="#skill" className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
+                        </Link>
+                        <Link onClick={handleNav} to="skill" smooth={true} offset={0} duration={500} className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
                         <i className="fa fa-database" aria-hidden="true"></i>
                             <span className="font-bold pl-5">SKILLS</span>
-                        </a>
-                        <a onClick={handleNav} href="#about" className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
+                        </Link>
+                        <Link onClick={handleNav} to="about" smooth={true} offset={0} duration={500} className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
                             <i className="fa-solid fa-user"></i>
                             <span className="font-bold pl-5">ABOUT</span>
-                        </a>
-                        <a onClick={handleNav} href="#contact" className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
+                        </Link>
+                        <Link onClick={handleNav} to="contact" smooth={true} offset={0} duration={500} className="w-[17rem] bg-[#00D8FF] rounded-xl text-center items-center justify-center m-4 p-3 shadow-lg transition-all ease-in-out duration-300 hover:translate-x-2 ">
                         <i className="fa fa-envelope" aria-hidden="true"></i>
                             <span className="font-bold pl-5">CONTACT</span>
-                        </a>
+                        </Link>
                     </div>
                 ) : ('')
             }
@@ -64,25 +64,25 @@ const SideNav = () => {
 
 
 
-                        <a href="#home" className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
+                        <Link to="home" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
                         <i className="fa fa-house" aria-hidden="true"></i>
  
-                        </a>
-                        <a href="#work" className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
+                        </Link>
+                        <Link to="work" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
                         <i className="fa-solid fa-bars-progress"></i>          
-                        </a>
-                        <a href="#project" className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
+                        </Link>
+                        <Link to="project" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
                         <i className="fa fa-th-large" aria-hidden="true"></i>
-                        </a>
-                        <a href="#skill" className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
+                        </Link>
+                        <Link to="skill" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
                         <i className="fa fa-database" aria-hidden="true"></i>                      
-                        </a>
-                        <a href="#about" className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
+                        </Link>
+                        <Link to="about" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
                             <i className="fa-solid fa-user"></i>                        
-                        </a>
-                        <a href="#contact" className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
+                        </Link>
+                        <Link to="contact" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
                             <i className="fa fa-envelope" aria-hidden="true"></i>                        
-                        </a>
+                        </Link>
                 </div>
             </div>
         </div>
