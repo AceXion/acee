@@ -35,7 +35,7 @@ const Main = () => {
                                 2000,
                                 'Pinoy !😎',
                                 2000,
-                                'beginner
+                                'beginner !',
                                 2000
                             ]}
                             wrapper="div"
