@@ -167,7 +167,36 @@ backdrop-filter: blur(5.1px);
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.logoicon:hover {
+    transform: translateX(0rem);
+    width: 10rem;
+    transition-delay: .5s;
+}
 
+.logoicon{
+    width: 3rem;
+    transition: all ease-in-out 300ms;
+}
+
+.hovershow {
+    width: 4rem;
+    transition: all ease-in-out 300ms;
+}
+
+.hoveer:hover .hovershow {
+    width: 10rem;
+}
+
+.height {
+    top: 25%;
+}
+
+@media (height <= 450px) {
+    .height {
+        top: 0%;
+        max-width: 0rem;
+    }
+}
 
 
 /* bg area */

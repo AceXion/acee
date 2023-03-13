@@ -53,36 +53,45 @@ const SideNav = () => {
                 ) : ('')
             }
            
-            <div className="md:flex hidden fixed top-[20vh] z-10 ml-5" >
-                <div className="flex flex-col space-y-7">
-                    
+            <div className="md:flex hidden fixed z-10 ml-5 items-center justify-center height" >
+                <div className="flex space-y-7 pb-[2rem]">
+                    <div className='bg-[#365b61] hovershow rounded-xl flex flex-col text-black shadow-xl py-3'>
                         {/* bug */}
                         <a className="hidden bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-y-4 ease-in-out transition-all duration-300 relative">                       
                         {/* <i className="fa fa-home" aria-hidden="true"></i> */}
-                        </a>
+                        * </a>
 
 
 
-
-                        <Link to="home" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
+                        <Link to="home" smooth={true} offset={0} duration={500} className="bg-[#00D8FF]  items-center overflow-hidden flex logoicon  shadowxlg m-2 px-4 py-3 rounded-full hover:translate-x-1 ease-in-out transition-all duration-300 relative">                       
                         <i className="fa fa-house" aria-hidden="true"></i>
- 
+                        <div className='px-[2rem]'>Home</div>                        
+
                         </Link>
-                        <Link to="work" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
-                        <i className="fa-solid fa-bars-progress"></i>          
+                        <Link to="work" smooth={true} offset={0} duration={500} className="bg-[#00D8FF]  items-center overflow-hidden flex logoicon shadow-xl m-2 px-4 py-3 rounded-full hover:translate-x-1 ease-in-out transition-all duration-300 relative">                       
+                        <i className="fa-solid fa-bars-progress"></i>
+                        <div className='px-[2rem]'>Work</div>                        
+          
                         </Link>
-                        <Link to="project" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
+                        <Link to="project" smooth={true} offset={0} duration={500} className="bg-[#00D8FF]  items-center overflow-hidden flex logoicon shadow-xl m-2 px-4 py-3 rounded-full hover:translate-x-1 ease-in-out transition-all duration-300 relative">                       
                         <i className="fa fa-th-large" aria-hidden="true"></i>
+                        <div className='px-[1.5rem]'>Project</div>                        
+
                         </Link>
-                        <Link to="skill" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
-                        <i className="fa fa-database" aria-hidden="true"></i>                      
+                        <Link to="skill" smooth={true} offset={0} duration={500} className="bg-[#00D8FF]  items-center overflow-hidden flex logoicon shadow-xl m-2 px-4 py-3 rounded-full hover:translate-x-1 ease-in-out transition-all duration-300 relative">                       
+                        <i className="fa fa-database" aria-hidden="true"></i>
+                        <div className='px-[1.5rem]'>Skills</div>                        
                         </Link>
-                        <Link to="about" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
-                            <i className="fa-solid fa-user"></i>                        
+                        <Link to="about" smooth={true} offset={0} duration={500} className="bg-[#00D8FF]  items-center overflow-hidden flex logoicon shadow-xl m-2 px-4 py-3 rounded-full hover:translate-x-1 ease-in-out transition-all duration-300 relative">                       
+                        <i className="fa-solid fa-user"></i>
+                        <div className='px-[1.5rem]'>About</div>                        
                         </Link>
-                        <Link to="contact" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] shadow-lg m-2 px-4 py-3 rounded-full hover:translate-x-2 ease-in-out transition-all duration-300 relative">                       
-                            <i className="fa fa-envelope" aria-hidden="true"></i>                        
+                        <Link to="contact" smooth={true} offset={0} duration={500} className="bg-[#00D8FF] items-center overflow-hidden flex  logoicon shadow-xl m-2 px-4 py-3 rounded-full hover:translate-x-1 ease-in-out transition-all duration-300 relative">                       
+                        <i className="fa fa-envelope" aria-hidden="true"></i>
+                       <div className='px-[1.5rem]'>contact</div>                      
                         </Link>
+                        
+                  </div>
                 </div>
             </div>
         </div>

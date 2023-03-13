@@ -10,7 +10,6 @@ import fof from '../images/404.webp'
 const FirstPproject = () => {
     return (
         <div>
-            <h1 className='text-center font-thinPoppins mb-5'>1/3</h1>
                 {/* third set */}
                 <div id='first' className='grid grid-cols-2 gap-12'>
 
@@ -35,6 +34,7 @@ const FirstPproject = () => {
                 link='#'/>
              </div>
 
+             <h1 className='text-center font-thinPoppins mb-5 pt-[5rem]'>1/3</h1>
         </div>
     );
 }
