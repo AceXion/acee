@@ -6,8 +6,8 @@ import act from '../assets/react.svg'
 
 const Main = () => {
 
-    const name = "Ace Malicay"
-    const logo = "Ace Xion"
+    const name = "Jonard "
+    const logo = "Naaaard"
     
     // links
     
