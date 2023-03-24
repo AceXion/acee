@@ -53,7 +53,7 @@ const WorkData = () => {
         <div id='work' className='bg-[#2C3333] h-full w-full pb-10'>
             <div className="container m-auto">
                 <div className='md:flex md:items-center md:justify-between md:max-w-[95%] px-[1rem]'>
-                    <h1 className="text-[#00D8FF] text-center mb-20 pt-20 md:text-[4rem] text-[2rem] font-boldPoppins md:text-left md:mx-[6rem] u-header">{title}<span className='hover:opacity-100 opacity-5 transition-all duration-200 ease-in-out' ><Link to="work" duration={500} smooth={true}> # </Link></span></h1>
+                    <h1 className="text-[#00D8FF] text-center mb-20 pt-20 md:text-[4rem] text-[2rem] font-boldPoppins md:text-left md:mx-[6rem] u-header" data-aos="fade-right">{title}<span className='hover:opacity-100 opacity-5 transition-all duration-200 ease-in-out' ><Link to="work" duration={500} smooth={true}> # </Link></span></h1>
                     <img className="h-full w-20 mr-20 animation md:block hidden" src={act} alt=""/>
                 </div>
                     

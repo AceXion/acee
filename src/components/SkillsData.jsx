@@ -14,9 +14,10 @@ const classN = "flex m-auto mt-12 px-[2rem] py-[1rem] bg-[#00D8FF] font-boldPopp
 
 
     return (
-        <div id='skill' className=' bg-[#2C3333]'>
-            <h1 className=' text-[#00D8FF] text-center mb-20 pt-20 md:text-[4rem] text-[2rem] font-boldPoppins md:text-left md:mx-[7.7rem] u-header relative'>Skills<span className='hover:opacity-100 opacity-5 transition-all duration-200 ease-in-out' ><Link to="skill" duration={500} smooth={true}> # </Link></span></h1>
-            <div className='md:container m-auto px-[1rem] flex items-center justify-center md:max-w-[60%]'>
+        <div id='skill' className=' bg-[#2C3333] pb-[10rem]'>
+            <div className='container m-auto'>
+            <h1 className=' text-[#00D8FF] text-center mb-20 pt-20 md:text-[4rem] text-[2rem] font-boldPoppins md:text-left md:mx-[7.7rem] u-header relative' data-aos="fade-right">Skills<span className='hover:opacity-100 opacity-5 transition-all duration-200 ease-in-out' ><Link to="skill" duration={500} smooth={true}> # </Link></span></h1>
+            <div className='md:container m-auto px-[1rem] flex items-center justify-center md:max-w-[60%]'  data-aos="fade-up">
                 <div className='lg:hidden bg-[#2E4F4F] text-[#2C3333] max-w-[30rem] w-[30rem] rounded-[15px] shadow-2xl lxlfont-blackPoppins'>
                     <h1 className='text-center text-3xl text-[#00D8FF] font-boldPoppins p-[3rem]'>{title} </h1>
 
@@ -36,17 +37,18 @@ const classN = "flex m-auto mt-12 px-[2rem] py-[1rem] bg-[#00D8FF] font-boldPopp
                     </div>
                </div>
             </div>
-            <div className='lg:hidden flex mx-auto'>
+            <div className='lg:hidden flex mx-auto' data-aos="fade-up">
                     {state >1 && (<button onClick={() => {
                         stated(state - 1)
             
-                    }}className={classN}>BACK</button>)}
+                    }} className={classN}>BACK</button>)}
 
                    {state <2 &&( <button onClick={() => {
                        stated(state + 1)
                       
-                    }}className={classN}>NEXT</button>)}
-</div>
+                    }} className={classN}>NEXT</button>)}
+                </div>
+            </div>
         </div>
     );
 }
