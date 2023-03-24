@@ -19,7 +19,7 @@ const ProjectData = () => {
             <Link to="project" duration={500} smooth={true}> # </Link>
           </span>
         </h1>
-          <p className="text-center lg:py-10 max-w-[60rem] mx-auto mb-10"  data-aos="fade-up">
+          <p className="text-center lg:py-10 max-w-[60rem] mx-auto mb-10 text-white"  data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             sequi aliquid possimus illo, hic alias, debitis nihil laudantium
             sunt maiores praesentium sapiente natus, provident ipsam. Voluptatem
