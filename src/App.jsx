@@ -11,7 +11,7 @@ import Cursorapp from "./Cursorapp"
 import Loader from "./components/Loader"
 import AOS from "aos"
 import 'aos/dist/aos.css'
-import About from "./components/about"
+
 
 
 // aos
@@ -46,7 +46,7 @@ function App() {
     setloading(true)
     setTimeout(() => {
       setloading(false)
-    }, 0)
+    }, 5000)
   },[])
   
   return (
@@ -68,7 +68,6 @@ function App() {
        <WorkData />
        <ProjectData />
        <SkillsData />
-       <About />
        <Contact />
       </div>
       }
